@@ -2,6 +2,7 @@ def cMinimo(matriz , Xvalue, Y):
   tam = len(matriz)
   Xvalue = Xvalue - 1
   Y = Y -1
+  forceBreak = len(matriz)
   compArray = [ [ i for i in range(tam)] for _ in range(3)]
   #SETAR VALORES INICIAIS NA TABELA (distância e posição)
   for k in range(tam):
@@ -21,6 +22,9 @@ def cMinimo(matriz , Xvalue, Y):
   maiorValor = 0
   indice = Xvalue
   while(IN[len(IN)-1] != Y):
+    if(forceBreak == 0):
+      return "Não há caminho entre esses vertices"
+    forceBreak -= 1
     #ACHANDO VALORES POSIVEIS DE DISTÂNCIA
     conj = [] # guarda os possiveis valores
     ind= [] #guarda os indices dos possiveis valores
@@ -47,7 +51,7 @@ def cMinimo(matriz , Xvalue, Y):
       if (compArray[1][x] != novo):
         compArray[2][x] = indice
         compArray[1][x] = novo
-
+    
   index = Y
   ordemIN = [Y]
   #percorrendo IN para achar o real valor de IN
