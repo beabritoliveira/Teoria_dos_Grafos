@@ -1,7 +1,7 @@
 # declarando uma matriz de adjacencia (YxY)
 from menorCaminho import cMinimo
 
-
+#QUESTAO 2
 infin = float("inf") #colocando infinito no que não se tem caminho
 M = [[99, 3, 5, 99, 8, 1, 99, 99],
      [3, 99, 2, 99, 99, 99, 1, 99],
@@ -27,3 +27,14 @@ print()
 
 #print((cMinimo(M, 1, 7)))
 #print((cMinimo(M, 3, 1)))
+
+#QUESTÂO 3
+
+M = [[99, 4, 99, 3, 4, 99],
+     [4, 99, 8, 99, 9, 5],
+     [99, 8, 99, 9, 3, 2],
+     [3, 99, 9, 99, 99, 7],
+     [4, 9, 3, 99, 99, 2],
+     [99, 5, 2, 7, 2, 99]]
+
+print(avgMin(M))
