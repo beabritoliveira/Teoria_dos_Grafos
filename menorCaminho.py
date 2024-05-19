@@ -1,7 +1,7 @@
 def cMinimo(matriz , Xvalue, Y):
   tam = len(matriz)
-  #Xvalue = Xvalue - 1
-  #Y = Y -1
+  Xvalue = Xvalue - 1
+  Y = Y -1
   compArray = [ [ i for i in range(tam)] for _ in range(3)]
   #SETAR VALORES INICIAIS NA TABELA (distância e posição)
   for k in range(tam):
