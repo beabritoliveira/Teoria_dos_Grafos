@@ -1,4 +1,5 @@
-# declarando uma matriz de adjacencia (YxY)
+from arvGeradMinim import avgMin
+from listaAdjacencia import listaAdjacencia
 from menorCaminho import cMinimo
 
 #QUESTAO 2
@@ -38,3 +39,17 @@ M = [[99, 4, 99, 3, 4, 99],
      [99, 5, 2, 7, 2, 99]]
 
 print(avgMin(M))
+
+# Questão 4 a 6
+M = [[99, 1, 99, 4, 99], #X
+     [1, 99, 3, 1, 5], #1
+     [99, 3, 99, 2, 2], #2
+     [4, 1, 2, 99, 3], #3
+     [99, 5, 2, 3, 99]] #Y
+
+m = listaAdjacencia(M)
+print(m[0])
+print(m[1])
+print(m[2])
+print(m[3])
+print(m[4])
